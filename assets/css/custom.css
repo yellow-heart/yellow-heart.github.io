@@ -1,0 +1,396 @@
+
+  /* google fonts import  */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+  --color-primary: #ffd132;
+  --color-secondary: #7A9E9F;
+  --color-tertiary: #8013d4;
+  --color-gradient-start: #4762ff;
+  --color-gradient-stop: #ff798e;
+  --color-gradient-start-secondary: #0bccee;
+  --color-gradient-stop-secondary: #ac1de1;
+  --color-gradient-start-tertiary: #ffba83;
+  --color-gradient-stop-tertiary: #ffa5cd;
+ 
+  --color-grey-dark: #1a1a1a; 
+  --color-grey-mid-dark: #333; 
+  --color-grey: #4c4c4c; 
+  --color-grey-mid: #999; 
+  --color-grey-light: #ccc; 
+  --color-grey-white: #fff; 
+
+  /* fonts */
+  --font-primary: 'Montserrat', sans-serif; 
+  --font-secondary: 'Inter', sans-serif;
+  /* --font-secondary: 'Syne', sans-serif; */
+}
+
+.text-grey-dark {color: var(--color-grey-dark);}
+.text-grey-mid-dark {color: var(--color-grey-mid-dark);}
+.text-grey {color: var(--color-grey);}
+.text-grey-mid {color: var(--color-grey-mid);}
+.text-grey-light {color: var(--color-grey-light);}
+
+
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.9em;
+  color: var(--color-grey-light);
+  background-color: #1a1a1a; 
+}
+
+main {
+background-color: #1a1a1a !important; 
+background-image: url(../../graphics/tile.png);
+background-blend-mode: overlay;
+}
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6 .h6 {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  color: #060221;
+}
+
+
+.h1,
+h1 {
+  font-size: 50px;
+  line-height: 1.4em;
+}
+
+.h2,
+h2 {
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.h3,
+h3 {
+  font-size: 32px;
+  line-height: 1.5em;
+}
+
+.h4,
+h4 {
+  font-size: 26px;
+  line-height: 1.6em;
+}
+
+.h5,
+h5 {
+  font-size: 20px;
+  line-height: 1.6em;
+}
+
+.h6,
+h6 {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+.font-family-syne {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-family-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.main-header .social-icon {
+  font-size: 17px;
+}
+
+.main-header .social-icon:not([class*=scheme-]) a,
+.main-nav > li > a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-header .social-icon:not([class*=scheme-]) a:hover,
+.main-nav > li > a:hover {
+  color: var(--color-primary) !important;
+}
+
+.main-nav > li > a {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.main-nav > li.is-active > a,
+.main-nav > li.current-menu-item > a,
+.main-nav > li:hover > a,
+.main-nav > li > a:hover {
+  color: #fff;
+}
+
+.nav-light .main-nav > li > a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-light .main-nav > li > a .link-ext {
+  background-color: #fff;
+}
+
+.nav-dark .main-nav > li > a {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.nav-dark .main-nav > li.is-active > a,
+.nav-dark .main-nav > li.current-menu-item > a,
+.nav-dark .main-nav > li:hover > a,
+.nav-dark .main-nav > li > a:hover {
+  color: #000;
+}
+.main-header-blur-bg {
+  backdrop-filter: blur(20px) !important;
+}
+
+.main-footer {
+  color: #98a2aa;
+}
+
+.main-footer a:not(.btn) {
+  color: var(--color-secondary);
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.main-footer a:not(.btn):hover {
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .main-header .is-stuck {
+    background: rgba(0, 0, 0, 0.65) !important;
+    
+  }
+  .mainbar-wrap.is-stuck .social-icon a,
+  .mainbar-wrap.is-stuck .header-module .ld-module-trigger,
+  .mainbar-wrap.is-stuck .main-nav > li > a,
+  .mainbar-wrap.is-stuck .ld-module-search-visible-form .ld-search-form input {
+    color: rgba(255, 255, 255, 0.75) !important;
+  }
+  .mainbar-wrap.is-stuck .social-icon a:hover,
+  .mainbar-wrap.is-stuck .main-nav > li > a:hover {
+    color: var(--color-primary) !important;
+  }
+  .megamenu-heading {
+    color: #3b91f7;
+  }
+  [data-megamenu-bg-scheme=light] .lqd-custom-menu a {
+    color: #3e3f42;
+  }
+  .megamenu .lqd-custom-menu a:hover {
+    color: #3b91f7;
+  }
+}
+
+
+
+.bg-gradient-yh-yellow {
+  background: linear-gradient(53.47deg, rgba(255, 209, 50, 0.1) 17.59%, rgba(255, 209, 50, 0) 69.69%);
+  background-attachment: fixed;
+}
+
+.bg-gradient-yh-purple {
+  background: linear-gradient(26.25deg, rgba(128, 19, 212, 0.1) 11.95%, rgba(128, 19, 212, 0) 68.87%);
+  background-attachment: fixed;
+}
+
+.bg-gradient-yh-green {
+  background: linear-gradient(180deg, rgba(17, 189, 55, 0.1) 0%, rgba(17, 189, 55, 0) 100%);
+  background-attachment: fixed;
+}
+
+.bg-gradient-yh-blue {
+  background: linear-gradient(180deg, rgba(50, 96, 255, 0.1) 0%, rgba(50, 96, 255, 0) 100%);
+  background-attachment: fixed;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+
+/* background: linear-gradient(180deg, rgba(50, 96, 255, 0.7) 0%, rgba(50, 96, 255, 0.462) 100%), url(BG-Site1.jpg);
+background-blend-mode: multiply, normal;
+-- blue 
+
+ background: linear-gradient(53.47deg, rgba(255, 209, 50, 0.6) 17.59%, rgba(255, 209, 50, 0.132) 69.69%), url(.png);
+background-blend-mode: soft-light, overlay;
+-- yellow  
+
+
+background: linear-gradient(180deg, rgba(17, 189, 55, 0.7) 0%, rgba(17, 189, 55, 0.483) 100%), url(BG-Site1.jpg);
+background-blend-mode: multiply, normal;
+-- green 
+
+background: linear-gradient(26.25deg, rgba(128, 19, 212, 0.5) 11.95%, rgba(128, 19, 212, 0.15) 68.87%), url(.png);
+background-blend-mode: soft-light, overlay;
+-- blue 
+
+*/
+
+.test-blur-bg {
+  width: 500px;
+  height: 500px;
+  background-image: url(../../graphics/comm-section01-block02.png);
+ 
+
+}
+
+.test-blur {
+  background-color: rgba(255, 255, 255, .25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  height: 300px;
+  width: 300px;
+  text-align: center;
+}
+
+.icon-svg-sm img {
+  width: 75px;
+  opacity: 0.35;
+  margin-bottom: 1em;
+}
+
+.icon-svg-md img {
+  width: 100px;
+  margin-top: -10px;
+ }
+
+
+/* typography customs */
+.text-section-title {
+  font-size: 5em;
+  margin: 0;
+  padding: 0;
+}
+
+.text-section-subtitle {
+  font-size: 1.5em;
+  color: var(--color-grey-light);
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.image-rounded {
+  border-radius: 40px !important;
+}
+
+.image-double-layer {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image-layer-bottom {
+  position: relative;
+  top: 4px;
+  left: 2px;
+}
+
+.image-layer-top {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: none;
+}
+
+
+/* pie chart styles  */
+
+
+.chart-wrapper {
+  width: 100%;
+  height: 350px;
+  /* background-color: #4c4c4c; */
+  position: relative;
+}
+
+path {
+  stroke: none;
+  /* stroke-width: 5px; */
+  cursor: pointer;
+  transition: fill 250ms;
+}
+path:hover {
+  /* stroke-width: 10px; */
+  fill: #fff;
+}
+
+text {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+polyline {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 1px;
+}
+
+
+/* helpers  */
+
+.nm-l-1 { margin-left: -1rem;}
+.nm-l-2 { margin-left: -2rem;}
+.nm-l-3 { margin-left: -3rem;}
+.nm-l-4 { margin-left: -4rem;}
+.nm-l-5 { margin-left: -5rem;}
+.nm-l-15 { margin-left: -15rem;}
+
+.nm-r-1 { margin-right: -1rem;}
+.nm-r-2 { margin-right: -2rem;}
+.nm-r-3 { margin-right: -3rem;}
+.nm-r-4 { margin-right: -4rem;}
+.nm-r-5 { margin-right: -5rem;}
+
+.nm-b-1 { margin-bottom: -1rem;}
+.nm-b-2 { margin-bottom: -2rem;}
+.nm-b-3 { margin-bottom: -3rem;}
+.nm-b-4 { margin-bottom: -4rem;}
+.nm-b-5 { margin-bottom: -5rem;}
+
+.nm-t-1 { margin-top: -1rem;}
+.nm-t-2 { margin-top: -2rem;}
+.nm-t-3 { margin-top: -3rem;}
+.nm-t-4 { margin-top: -4rem;}
+.nm-t-5 { margin-top: -5rem;}
+
+
+/* responsive blocks  */
+
+@media (max-width: 600px) {
+
+  .ld-fancy-heading h2 {
+    font-size: 26px !important;
+  }
+  
+  .ld-fancy-heading p {
+    font-size: 16px;
+    line-height: 1.15em ;
+  }
+
+}
+

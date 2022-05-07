@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+  --color-primary: #ffd132;
+  --color-secondary: #7A9E9F;
+  --color-tertiary: #8013d4;
+  --color-gradient-start: #4762ff;
+  --color-gradient-stop: #ff798e;
+  --color-gradient-start-secondary: #0bccee;
+  --color-gradient-stop-secondary: #ac1de1;
+  --color-gradient-start-tertiary: #ffba83;
+  --color-gradient-stop-tertiary: #ffa5cd;
+ 
+  --color-grey-dark: #1a1a1a; 
+  --color-grey-mid-dark: #333; 
+  --color-grey: #4c4c4c; 
+  --color-grey-mid: #999; 
+  --color-grey-light: #ccc; 
+  --color-grey-white: #fff; 
+
+  /* fonts */
+  --font-primary: 'Montserrat', sans-serif; 
+  --font-secondary: 'Inter', sans-serif;
+  /* --font-secondary: 'Syne', sans-serif; */
+}
+
+.text-grey-dark {color: var(--color-grey-dark);}
+.text-grey-mid-dark {color: var(--color-grey-mid-dark);}
+.text-grey {color: var(--color-grey);}
+.text-grey-mid {color: var(--color-grey-mid);}
+.text-grey-light {color: var(--color-grey-light);}
+
+
+body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  line-height: 1.5em;
+  font-size: 1em;
+  color: #808291;
+}
+
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5,
+.h6, h6 {
+  font-weight: 800;
+  line-height: 1.2em;
+  color: #181b31;
+}
+
+.h1, h1,
+.h5, h5,
+.h6, h6 {
+  font-family: var(--font-primary);
+}
+
+.h2, h2,
+.h3, h3,
+.h4, h4 {
+  font-family: var(--font-primary);
+}
+
+.h1,
+h1 {
+  font-size: 52px;
+}
+
+.h2,
+h2 {
+  font-size: 40px;
+}
+
+.h3,
+h3 {
+  font-size: 35px;
+}
+
+.h4,
+h4 {
+  line-height: 1.333em;
+  font-size: 30px;
+}
+
+.h5,
+h5 {
+  font-size: 21px;
+}
+
+.h6,
+h6 {
+  font-size: 18px;
+}
+
+.main-nav > li > a {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.main-nav > li > a .link-ext {
+  background: var(--color-primary);
+}
+
+.main-nav > li.is-active > a,
+.main-nav > li.current-menu-item > a,
+.main-nav > li:hover > a,
+.main-nav > li > a:hover {
+  color: white;
+}
+
+.navbar-brand-inner img {
+  width: 60%;
+}
+
+/* responsive blocks  */
+
+@media (max-width: 600px) {
+
+  .ld-fancy-heading h2 {
+    font-size: 36px !important;
+  }
+  
+  .ld-fancy-heading p {
+    font-size: 16px;
+    line-height: 1.15em ;
+  }
+
+}
+
+
